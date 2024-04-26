@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_62673f252a361ae47563a80916410d55 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_62673f252a361ae47563a80916410d55" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_62673f252a361ae47563a80916410d55 = L.map(
+                "map_62673f252a361ae47563a80916410d55",
+                {
+                    center: [64.54397606229037, 40.510735463353384],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_04caaff621061ede1b5249720f786f32 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_04caaff621061ede1b5249720f786f32.addTo(map_62673f252a361ae47563a80916410d55);
+        
+    
+            var marker_5cf7ce4a8b9010c5fccc76cd2f14a1a0 = L.marker(
+                [64.54397606229037, 40.510735463353384],
+                {}
+            ).addTo(map_62673f252a361ae47563a80916410d55);
+        
+    
+            var icon_443b00698dd16bfa8e1f6edf852da5d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5cf7ce4a8b9010c5fccc76cd2f14a1a0.setIcon(icon_443b00698dd16bfa8e1f6edf852da5d3);
+        
+    
+        var popup_5dc625a1bb68044ed9308c2ef80367b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b3b3b8c8b35bb5958026c6540c456d1 = $(`<div id="html_0b3b3b8c8b35bb5958026c6540c456d1" style="width: 100.0%; height: 100.0%;">           <img src="object_images/Памятник_тюленю_-_panoramio.jpg" class="cover"           style="height: 100%; width:100%; object-fit:cover">          <a href="/">Памятник Тюленю-Спасителю</a>          </div>`)[0];
+                popup_5dc625a1bb68044ed9308c2ef80367b8.setContent(html_0b3b3b8c8b35bb5958026c6540c456d1);
+            
+        
+
+        marker_5cf7ce4a8b9010c5fccc76cd2f14a1a0.bindPopup(popup_5dc625a1bb68044ed9308c2ef80367b8)
+        ;
+
+        
+    
+    
+            marker_5cf7ce4a8b9010c5fccc76cd2f14a1a0.bindTooltip(
+                `<div>
+                     наб. Северной Двины, 95, Архангельск
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d85bcc1847f363623006faca5e46b972 = L.marker(
+                [64.529384, 40.536262],
+                {}
+            ).addTo(map_62673f252a361ae47563a80916410d55);
+        
+    
+            var icon_073f5972edd6e69288ea08afb3631a56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d85bcc1847f363623006faca5e46b972.setIcon(icon_073f5972edd6e69288ea08afb3631a56);
+        
+    
+        var popup_4ae512e0eb2eb96a944698eaf354f2e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_59f3a5a619f332178d9c9cbf9b5eee6c = $(`<div id="html_59f3a5a619f332178d9c9cbf9b5eee6c" style="width: 100.0%; height: 100.0%;">           <img src="object_images/2022-02-17.jpg" class="cover"           style="height: 100%; width:100%; object-fit:cover">          <a href="/">Собор Архистратига Божия Михаила</a>          </div>`)[0];
+                popup_4ae512e0eb2eb96a944698eaf354f2e5.setContent(html_59f3a5a619f332178d9c9cbf9b5eee6c);
+            
+        
+
+        marker_d85bcc1847f363623006faca5e46b972.bindPopup(popup_4ae512e0eb2eb96a944698eaf354f2e5)
+        ;
+
+        
+    
+    
+            marker_d85bcc1847f363623006faca5e46b972.bindTooltip(
+                `<div>
+                     наб. Северной Двины, 34, Архангельск,
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
