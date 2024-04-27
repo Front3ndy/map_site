@@ -1,3 +1,4 @@
+/* Сброс стилей html */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,6 +26,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background-color: #FAFBFC;
 }
 ol, ul {
 	list-style: none;
@@ -40,4 +42,20 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+.header {
+	background-color: #fff;
+}
+
+.container {
+	max-width: 1383px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.header-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
