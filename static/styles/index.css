@@ -24,7 +24,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+  
 body {
+	font-family: "Montserrat Alternates", sans-serif;
 	line-height: 1;
 	background-color: #FAFBFC;
 }
@@ -46,6 +48,7 @@ table {
 
 .header {
 	background-color: #fff;
+	padding: 21px 104px;
 }
 
 .container {
@@ -58,4 +61,58 @@ table {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.header-title-text {
+	justify-content: center;
+	font-weight: 600;
+	font-size: 32px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.promo__inner {
+	display: flex;
+	flex-direction: column;
+	background-image: url(../../media/arhangelsk.png);
+	min-height: 100vh;
+	background-repeat: no-repeat;
+	background-position: top;
+	justify-content: center;
+}
+
+.title {
+	color: #fff;
+	font-weight: 400px;
+	font-size: 80px;
+	text-align: center;
+}
+
+.subtitle {
+	color: #fff;
+	font-weight: 400px;
+	font-size: 45px;
+	text-align: center;
+}
+
+.review__title {
+	display: flex;
+	justify-content: space-between;
+}
+
+.review-plan {
+	font-size: 32px;
+	font-weight: 600;
+}
+
+.review-more {
+	font-size: 14px;
+	font-weight: 500;
+	padding: 16px 10px;
+	border: 1px solid;
+	border-color: #8dd3bb;
+}
+
+.review-more-link {
+	text-decoration: none;
 }
