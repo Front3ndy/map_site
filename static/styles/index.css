@@ -111,8 +111,24 @@ table {
 	padding: 16px 10px;
 	border: 1px solid;
 	border-color: #8dd3bb;
+	transition: 0.3s;
+
+}
+
+.review-more:hover {
+	font-size: 14px;
+	font-weight: 500;
+	padding: 16px 10px;
+	border: 1px solid;
+	border-color: #8dd3bb;
+	background-color: #8dd3bb;
 }
 
 .review-more-link {
 	text-decoration: none;
+}
+
+.review-more-link:visited {
+	text-decoration: none;
+	color: black;
 }
