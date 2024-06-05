@@ -64,6 +64,7 @@ table {
 }
 
 .header-title-text {
+	cursor: default;
 	justify-content: center;
 	font-weight: 600;
 	font-size: 32px;
@@ -98,6 +99,7 @@ table {
 .review__title {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 30px;
 }
 
 .review-plan {
@@ -131,4 +133,67 @@ table {
 .review-more-link:visited {
 	text-decoration: none;
 	color: black;
+}
+
+.review-grid {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.grid-element {
+	display: flex;
+	flex-direction: row;
+	background-color: #fff;
+	border-radius: 16px;
+	padding: 16px;
+	width: calc(100% / 3.5);
+	height: 122px;
+	margin-bottom: 32px;
+	transition: 0.3s;
+}
+
+.grid-element:hover {
+	display: flex;
+	flex-direction: row;
+	background-color: rgba(174, 226, 209, 0.9);;
+	border-radius: 16px;
+	padding: 16px;
+	width: calc(100% / 3.5);
+	height: 122px;
+	margin-bottom: 32px;
+}
+
+.grid-element-img {
+	width: 90px;
+	height: 90px;
+}
+
+.grid-element-text {
+	margin-top: 32px;
+	margin-bottom: 32px;
+	margin-left: 16px;
+	cursor: default;
+}
+
+.grid-element-text h1 {
+	font-weight: bolder;
+	font-size: 16px;
+	color: #112211;
+	margin-bottom: 5px;
+}
+
+.grid-element-text h2 {
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.map-text-header {
+	font-size: 32px;
+	font-weight: bolder;
+}
+
+.map-mage {
+	border-radius: 16px;
+	min-height: 100vh;
 }
