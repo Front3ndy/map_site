@@ -188,12 +188,65 @@ table {
 	font-size: 14px;
 }
 
+.map {
+	margin-bottom: 31px;
+}
+
 .map-text-header {
 	font-size: 32px;
 	font-weight: bolder;
+	margin-bottom: 35px;
 }
 
 .map-mage {
 	border-radius: 16px;
 	min-height: 100vh;
+}
+
+.google-views-headers {
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.google-views-headers-hs h1 {
+	margin-bottom: 16px;
+	font-size: 32px;
+	font-weight: bolder;
+}
+
+.google-views-headers-hs h2 {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.sq {
+	border-radius: 16px;
+	height: 560px;
+	width: calc(100% / 3.3);
+}
+
+.google-views-marks-element {
+	position: relative;
+}
+
+.google-views-marks-main-element {
+	background-color: #fff;
+	padding: 24px;
+}
+
+.google-views-marks-main-element h1 {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.google-views-marks-background {
+	position: absolute;
+	padding: 24px;
+	background-color: rgba(141, 211, 187, 0.4);
+	top: 25px;
+	left: 25px;
+	z-index: -1;
 }
