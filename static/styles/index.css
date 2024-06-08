@@ -224,8 +224,14 @@ table {
 
 .sq {
 	border-radius: 16px;
-	height: 560px;
-	width: calc(100% / 3.3);
+	min-height: 560px;
+	width: calc(100% / 6.4);
+}
+
+.google-views-marks {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
 
 .google-views-marks-element {
@@ -240,6 +246,7 @@ table {
 .google-views-marks-main-element h1 {
 	font-size: 20px;
 	font-weight: 400;
+	margin-bottom: 20px;
 }
 
 .google-views-marks-background {
@@ -250,3 +257,87 @@ table {
 	left: 25px;
 	z-index: -1;
 }
+
+.show-more-google {
+	margin-bottom: 16px;
+}
+
+.show-more-google span {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.google-show-more-button {
+	float: right;
+    margin-top: 10px;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 400;
+	color: #112211;
+	transition: 0.3s;
+}
+
+.google-show-more-button:visited {
+	float: right;
+    margin-top: 10px;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 400;
+	color: #112211;
+}
+
+.google-show-more-button:hover {
+	float: right;
+    margin-top: 10px;
+	text-decoration: none;
+	font-size: 17px;
+	font-weight: 400;
+	color: #112211;
+}
+
+.text-container{
+    margin-top:20px;
+    display:inline-block;
+	height: 40px;
+}
+
+.text-hidden{
+	white-space: nowrap; 
+	overflow: hidden;
+	text-overflow: ellipsis; 
+	width: 100%;
+}
+
+.star-marks {
+	margin-bottom: 20px;
+}
+
+.username {
+	margin-bottom: 40px;
+}
+
+.name {
+	margin-bottom: 8px;
+}
+
+.name span {
+	color: #112211;
+}
+
+.google-logo {
+	display: flex;
+}
+
+.google-logo span {
+	margin: auto 0;
+	margin-left: 8px;
+	font-size: 12px;
+	font-weight: 400;
+	color: #112211;
+}
+
+.object-img img {
+	width: 100%;
+}
+
