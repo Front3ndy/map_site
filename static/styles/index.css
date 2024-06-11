@@ -405,6 +405,16 @@ input {
 	margin-left: 10px;
 }
 
+#form-button a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#form-button a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
 .main {
 	margin-bottom: 200px;
 }
