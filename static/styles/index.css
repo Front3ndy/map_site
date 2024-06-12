@@ -198,9 +198,9 @@ table {
 	margin-bottom: 35px;
 }
 
-.map-mage {
+.map-image {
 	border-radius: 16px;
-	min-height: 100vh;
+	max-height: 100vh;
 }
 
 .google-views {
