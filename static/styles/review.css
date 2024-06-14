@@ -97,3 +97,168 @@ table {
 .title {
     text-align: center;
 }
+
+.main-title {
+	margin-bottom: 40px;
+}
+
+.text-about {
+	line-height: 1.5;
+	font-size: 20px;
+}
+
+.main-text {
+	margin-bottom: 40px;
+}
+
+.address {
+	margin-bottom: 50px;
+}
+
+.address-main {
+	display: flex;
+	text-align: center;
+	font-size: 18px;
+	align-items: center;
+}
+
+.address-main img {
+	height: 26px;
+	width: 26px;
+	margin-right: 10px;
+}
+
+.address-main p {
+	text-align: center;
+}
+
+.post-form-div {
+	background-color: #CDEAE1;
+	height: 305px;
+	width: 100%;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.form-main {
+	padding: 26px;
+}
+
+.form-main h1 {
+	width: 590px;
+	color: #112211;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+.form-main h2 {
+	width: 370px;
+	color: #112211;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+input {
+	border: none;
+	border-radius: 4px;
+	height: 56px;
+	width: 450px;
+	color: #1C1B1F;
+	font-weight: 400;
+	font-size: 16px;
+	padding-left: 10px;
+	font-family: "Montserrat Alternates", sans-serif;
+}
+
+#form-button {
+	height: 56px;
+	border: none;
+	border-radius: 4px;
+	background-color: #112211;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bolder;
+	padding: 0 15px;
+	margin-left: 10px;
+}
+
+#form-button a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#form-button a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.main {
+	margin-bottom: 200px;
+}
+
+.form-img img {
+	margin-right: 40px;
+}
+
+footer {
+	position: relative;
+	
+}
+
+.footer-nav {
+	background-color: #8DD3BB;
+	height: 300px;
+	position: absolute;
+	bottom: 0;
+	z-index: -1;
+	width: 100%;
+}
+
+.footer-logos {
+	display: flex;
+	margin-top: 150px;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.footer-links {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-align: center;
+}
+
+.vk-footer {
+	margin-right: 20px;
+	transition: 0.5s;
+}
+
+.tg-footer {
+	transition: 0.5s;
+}
+
+.vk-footer img:hover {
+	height: 54px;
+	width: 54px;
+}
+
+.tg-footer img:hover {
+	height: 61px;
+	width: 61px;
+}
+
+.footer-main-logo img {
+	height: 120px;
+	width: 120px;
+}
+
+.footer-main-logo img:hover {
+	height: 122px;
+	width: 122px;
+} 
