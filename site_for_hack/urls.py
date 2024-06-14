@@ -17,10 +17,13 @@ Including another URLconf
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, re_path
+from map_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("", views.homepage, name="home"),
+    re_path(r'^form', views.contact),
 ]
 
 if settings.DEBUG:

@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../media/лого.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;0,600;0,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/form.css">
+    <link rel="stylesheet" href="../../static/styles/form.css">
     <title>Form</title>
 </head>
 <body>
@@ -15,9 +16,8 @@
             <h1>Предложите достопримечательность</h1>
             <div class="post-form">
                 <form method="post" id="form-post">
-                    <input type="text" onfocus="this.value=''" value="Введите ваше имя">
-                    <input type="email" onfocus="this.value=''" value="Введите ваш почтовый адрес">
-                    <input type="text" onfocus="this.value=''" value="Название достопримечательности">
+                    {% csrf_token %}
+                    {{ form.as_p }}
                 </form>
                 <button form="form-post" type="submit">Отправить</button>
             </div>
