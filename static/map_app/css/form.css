@@ -60,7 +60,76 @@ table {
     
     .form-div {
         background-color: #9aedd0;
-        height: 500px;
+        height: 600px;
+        width: 500px;
+        margin: 0 auto;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    h1 {
+        padding: 16px;
+        font-size: 24px;
+        font-weight: 700;
+        color: #112211;
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    p input {
+        width: 100%;
+    }
+
+    #id_message {
+        
+    }
+    
+    input {
+        width: 80%;
+        padding: 16px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 15px;
+    }
+    
+    button {
+        border: none;
+        border-radius: 15px;
+        padding: 20px;
+        cursor: pointer;
+        color: #fff;
+        background-color: #81cab1;
+        font-size: 16px;
+        font-weight: 700;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    
+}
+
+@media (max-width: 559px) {
+    .header {
+        background-color: #fff;
+        padding: 21px 104px;
+    }
+    
+    .container {
+        max-width: 500px;
+        margin: 15vh auto;
+        padding: 0 15px;
+    }
+    
+    .form-div {
+        background-color: #9aedd0;
+        height: 600px;
         width: 500px;
         margin: 0 auto;
         border-radius: 15px;
@@ -101,65 +170,8 @@ table {
         background-color: #81cab1;
         font-size: 16px;
         font-weight: 700;
-    }
-    
-}
-
-@media (max-width: 559px) {
-    .header {
-        background-color: #fff;
-        padding: 21px 104px;
-    }
-    
-    .container {
-        max-width: 500px;
-        margin: 15vh auto;
-        padding: 0 15px;
-    }
-    
-    .form-div {
-        background-color: #9aedd0;
-        max-height: 500px;
-        max-width: 500px;
+        max-width: 200px;
         margin: 0 auto;
-        border-radius: 15px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    h1 {
-        padding: 16px;
-        font-size: 24px;
-        font-weight: 700;
-        color: #112211;
-        margin-bottom: 50px;
-        margin-top: 30px;
-    }
-    
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    input {
-        width: 80%;
-        padding: 16px;
-        margin-bottom: 20px;
-        border: none;
-        border-radius: 15px;
-    }
-    
-    button {
-        border: none;
-        border-radius: 15px;
-        padding: 20px;
-        cursor: pointer;
-        color: #fff;
-        background-color: #81cab1;
-        font-size: 16px;
-        font-weight: 700;
     }
 }
 
@@ -178,8 +190,8 @@ table {
     
     .form-div {
         background-color: #9aedd0;
-        max-height: 500px;
-        max-width: 500px;
+        height: 600px;
+        width: 500px;
         margin: 0 auto;
         border-radius: 15px;
         display: flex;
@@ -219,6 +231,8 @@ table {
         background-color: #81cab1;
         font-size: 16px;
         font-weight: 700;
+        max-width: 200px;
+        margin: 0 auto;
     }
 }
 
@@ -237,8 +251,8 @@ table {
     
     .form-div {
         background-color: #9aedd0;
-        max-height: 500px;
-        max-width: 500px;
+        height: 600px;
+        width: 500px;
         margin: 0 auto;
         border-radius: 15px;
         display: flex;
@@ -278,5 +292,7 @@ table {
         background-color: #81cab1;
         font-size: 16px;
         font-weight: 700;
+        max-width: 200px;
+        margin: 0 auto;
     }
 }

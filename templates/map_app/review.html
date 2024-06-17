@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;0,600;0,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../static/styles/review.css">
+    <link rel="stylesheet" href="{% static 'map_app/css/review.css' %}">
     <title>Тюлень</title>
 </head>
 <body>
@@ -26,14 +27,14 @@
             <div class="main-img">
                 <div class="container">
                     <div class="main-img-div">
-                        <img src="../../media/тюлень легенда.jpg" alt="main-image" class="main-img-img">
+                        <img src="{{ dost.image.url }}" alt="main-image" class="main-img-img">
                     </div>
                 </div>
             </div>
             <div class="main-title">
                 <div class="container">
                     <div class="title">
-                        <h1 class="header-title-text">Памятник «Тюленю — спасителю жителей Архангельска и блокадного Ленинграда»</h1>
+                        <h1 class="header-title-text">{{ dost.obj_name }}</h1>
                     </div>
                 </div>
             </div>
@@ -41,20 +42,7 @@
                 <div class="container">
                     <div class="text-about">
                         <p>
-                            Во времена Великой Отечественной войны в Архангельске суточная норма хлеба снижалась в некоторые
-                             месяцы до 125 грамм на человека (что соответствует минимальной норме в блокадном Ленинграде)[1]. 
-                             Архангельск был вторым (после Ленинграда) городом в СССР по смертности от голода, несмотря на то, что 
-                             через его порт проходили тысячи тонн продовольствия, импортируемого по ленд-лизу. За 1941—1944 годы в 
-                             Архангельске от голода и болезней умерло 38 тысяч жителей (каждый седьмой из предвоенной 
-                             численности населения 281 тыс. человек)[2].
-                        </p>
-                        <p>
-                            Для улучшения продовольственного снабжения были организованы промысловые экспедиции с целью 
-                            охоты на тюленя в Белом и Баренцевом морях[3]. Добытые мясо, жир и шкуры северных животных спасли 
-                            от голодной смерти и холода тысячи нуждающихся людей не только в Архангельске и близлежащих
-                             местностях, но и в Ленинграде (из Архангельска в Ленинград для ликвидации последствий блокады 
-                             было отправлено более тысячи тонн пищевого и медицинского жира из тюленьего сала)[4]. Кроме того, 
-                             тюлений жир использовался для смазки орудий на кораблях Северного флота.
+                            {{ dost.obj_description }}
                         </p>
                     </div>
                 </div>
@@ -63,7 +51,7 @@
                 <div class="container">
                     <div class="address-main">
                         <img src="../../media/bxs_map.svg" alt="address link">
-                        <p>наб. Северной Двины, 95, Архангельск, Архангельская обл., Россия</p>
+                        <p>{{ dost.obj_address }}</p>
                     </div>
                 </div>
             </div>

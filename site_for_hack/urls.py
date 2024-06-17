@@ -23,6 +23,7 @@ from map_app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", views.homepage, name="home"),
+    path('<int:pk>/', views.DetailView.as_view()),
     re_path(r'^form', views.contact),
 ]
 

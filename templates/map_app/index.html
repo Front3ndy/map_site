@@ -46,78 +46,15 @@
                     </h2>
                 </div>
                 <div class="review-grid">
-
-                    <div class="grid-element">
-                        <a href="./review.html" class="grid-el-link"><img src="../../media/беломорские укзоры 1.png" alt="беломорские узоры" class="grid-element-img"></a>
-                        <div class="grid-element-text">
-                            <h1>Беломорские узоры</h1>
-                            <h2>Магазин подарков и сувениров</h2>
+                    {% for dost in some %}
+                        <div class="grid-element">
+                            <a href="./review.html" class="grid-el-link"><img src="{{ dost.image.url }}" alt="беломорские узоры" class="grid-element-img"></a>
+                            <div class="grid-element-text">
+                                <h1>{{ dost.obj_name }}</h1>
+                                <h2>Узнать больше</h2>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="grid-element">
-                        <a href="#" class="grid-el-link"><img src="../../media/беломорские укзоры 1.png" alt="беломорские узоры" class="grid-element-img"></a>
-                        <div class="grid-element-text">
-                            <h1>Беломорские узоры</h1>
-                            <h2>Магазин подарков и сувениров</h2>
-                        </div>
-                    </div>
-
-                    <div class="grid-element">
-                        <a href="#" class="grid-el-link"><img src="../../media/беломорские укзоры 1.png" alt="беломорские узоры" class="grid-element-img"></a>
-                        <div class="grid-element-text">
-                            <h1>Беломорские узоры</h1>
-                            <h2>Магазин подарков и сувениров</h2>
-                        </div>
-                    </div>
-
-                    <div class="grid-element">
-                        <a href="#" class="grid-el-link"><img src="../../media/беломорские укзоры 1.png" alt="беломорские узоры" class="grid-element-img"></a>
-                        <div class="grid-element-text">
-                            <h1>Беломорские узоры</h1>
-                            <h2>Магазин подарков и сувениров</h2>
-                        </div>
-                    </div>
-
-                    <div class="grid-element">
-                        <a href="#" class="grid-el-link"><img src="../../media/беломорские укзоры 1.png" alt="беломорские узоры" class="grid-element-img"></a>
-                        <div class="grid-element-text">
-                            <h1>Беломорские узоры</h1>
-                            <h2>Магазин подарков и сувениров</h2>
-                        </div>
-                    </div>
-
-                    <div class="grid-element">
-                        <a href="#" class="grid-el-link"><img src="../../media/беломорские укзоры 1.png" alt="беломорские узоры" class="grid-element-img"></a>
-                        <div class="grid-element-text">
-                            <h1>Беломорские узоры</h1>
-                            <h2>Магазин подарков и сувениров</h2>
-                        </div>
-                    </div>
-
-                    <div class="grid-element">
-                        <a href="#" class="grid-el-link"><img src="../../media/беломорские укзоры 1.png" alt="беломорские узоры" class="grid-element-img"></a>
-                        <div class="grid-element-text">
-                            <h1>Беломорские узоры</h1>
-                            <h2>Магазин подарков и сувениров</h2>
-                        </div>
-                    </div>
-
-                    <div class="grid-element">
-                        <a href="#" class="grid-el-link"><img src="../../media/беломорские укзоры 1.png" alt="беломорские узоры" class="grid-element-img"></a>
-                        <div class="grid-element-text">
-                            <h1>Беломорские узоры</h1>
-                            <h2>Магазин подарков и сувениров</h2>
-                        </div>
-                    </div>
-
-                    <div class="grid-element">
-                        <a href="#" class="grid-el-link"><img src="../../media/беломорские укзоры 1.png" alt="беломорские узоры" class="grid-element-img"></a>
-                        <div class="grid-element-text">
-                            <h1>Беломорские узоры</h1>
-                            <h2>Магазин подарков и сувениров</h2>
-                        </div>
-                    </div>
+                    {% endfor %}
 
                 </div>
             </div>
