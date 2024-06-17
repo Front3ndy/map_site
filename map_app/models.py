@@ -28,6 +28,7 @@ class ObjectsData(models.Model):
     obj_category = models.ForeignKey('Category', on_delete=models.CASCADE)
     status = models.CharField(max_length=1, choices=STATUS_CHOISES, default='d')
     image = models.ImageField(verbose_name='Изображение', upload_to='object_images/', default=None)
+    url = models.SlugField(max_length=130, default='objects')
 
     def __str__(self):
         return self.obj_name

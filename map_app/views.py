@@ -9,8 +9,8 @@ from .models import ObjectsData
 
 class DetailView(View):
 
-    def get(self, request, pk):
-        dost = ObjectsData.objects.get(id=pk)
+    def get(self, request, slug):
+        dost = ObjectsData.objects.get(url=slug)
         return render(request, 'map_app/review.html', {'dost': dost})
 
 def homepage(request):
