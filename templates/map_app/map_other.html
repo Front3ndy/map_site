@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_26b586d7eb1c92b06c194608f3126972 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_26b586d7eb1c92b06c194608f3126972" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_26b586d7eb1c92b06c194608f3126972 = L.map(
+                "map_26b586d7eb1c92b06c194608f3126972",
+                {
+                    center: [64.54397606229037, 40.510735463353384],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 18,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8350e90d5a4c2351ba46280ff5d5137a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_8350e90d5a4c2351ba46280ff5d5137a.addTo(map_26b586d7eb1c92b06c194608f3126972);
+        
+    
+            var marker_222cdf61a265868201b315c419485fbf = L.marker(
+                [64.529384, 40.536262],
+                {}
+            ).addTo(map_26b586d7eb1c92b06c194608f3126972);
+        
+    
+            var icon_b68947c847a90eece31d09cc6d024e33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_222cdf61a265868201b315c419485fbf.setIcon(icon_b68947c847a90eece31d09cc6d024e33);
+        
+    
+        var popup_da371e752dc3ed29f7973b3966552fff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fbcdabd9e7b0cf2c1c397c83c083a7be = $(`<div id="html_fbcdabd9e7b0cf2c1c397c83c083a7be" style="width: 100.0%; height: 100.0%;">           <a href="/michael/">Собор Архистратига Божия Михаила</a>          </div>`)[0];
+                popup_da371e752dc3ed29f7973b3966552fff.setContent(html_fbcdabd9e7b0cf2c1c397c83c083a7be);
+            
+        
+
+        marker_222cdf61a265868201b315c419485fbf.bindPopup(popup_da371e752dc3ed29f7973b3966552fff)
+        ;
+
+        
+    
+    
+            marker_222cdf61a265868201b315c419485fbf.bindTooltip(
+                `<div>
+                     наб. Северной Двины, 34, Архангельск,
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_395ca154c0167a0a39a0b995412aeb15 = L.marker(
+                [64.550473, 40.514843],
+                {}
+            ).addTo(map_26b586d7eb1c92b06c194608f3126972);
+        
+    
+            var icon_648a755a9796fea7d0e5d313de59156c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_395ca154c0167a0a39a0b995412aeb15.setIcon(icon_648a755a9796fea7d0e5d313de59156c);
+        
+    
+        var popup_27153892cccb3869a39a5aa75facc27f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aff831bf30017434224ab46a21c6cea7 = $(`<div id="html_aff831bf30017434224ab46a21c6cea7" style="width: 100.0%; height: 100.0%;">           <a href="/os/">Особняк Суркова</a>          </div>`)[0];
+                popup_27153892cccb3869a39a5aa75facc27f.setContent(html_aff831bf30017434224ab46a21c6cea7);
+            
+        
+
+        marker_395ca154c0167a0a39a0b995412aeb15.bindPopup(popup_27153892cccb3869a39a5aa75facc27f)
+        ;
+
+        
+    
+    
+            marker_395ca154c0167a0a39a0b995412aeb15.bindTooltip(
+                `<div>
+                     набережная Северной Двины, 109, Архангельск, 163069
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a4d63a0ed791bac113741240e58e669f = L.marker(
+                [64.550059, 40.515245],
+                {}
+            ).addTo(map_26b586d7eb1c92b06c194608f3126972);
+        
+    
+            var icon_9a72e321f40b0c559d9503dcc3a3bbc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_a4d63a0ed791bac113741240e58e669f.setIcon(icon_9a72e321f40b0c559d9503dcc3a3bbc7);
+        
+    
+        var popup_3a03a9f0bef70076e58bf43ac41f3466 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9cf7607c1bb25010d8297abe529afe05 = $(`<div id="html_9cf7607c1bb25010d8297abe529afe05" style="width: 100.0%; height: 100.0%;">           <a href="/uspen/">Церковь Успения Пресвятой Богородицы</a>          </div>`)[0];
+                popup_3a03a9f0bef70076e58bf43ac41f3466.setContent(html_9cf7607c1bb25010d8297abe529afe05);
+            
+        
+
+        marker_a4d63a0ed791bac113741240e58e669f.bindPopup(popup_3a03a9f0bef70076e58bf43ac41f3466)
+        ;
+
+        
+    
+    
+            marker_a4d63a0ed791bac113741240e58e669f.bindTooltip(
+                `<div>
+                     улица Логинова, 1, Архангельск, 163000
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c6036457f66cc8d7705a5233fc87a31a = L.marker(
+                [64.539115, 40.509573],
+                {}
+            ).addTo(map_26b586d7eb1c92b06c194608f3126972);
+        
+    
+            var icon_c22ecd59d571a0906d475d48a4546caa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_c6036457f66cc8d7705a5233fc87a31a.setIcon(icon_c22ecd59d571a0906d475d48a4546caa);
+        
+    
+        var popup_0cafe70bfd1376a78ba519d21c24ebe0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49921f6bd80f5386fb26a036f3457fc4 = $(`<div id="html_49921f6bd80f5386fb26a036f3457fc4" style="width: 100.0%; height: 100.0%;">           <a href="/host/">Гостиный двор</a>          </div>`)[0];
+                popup_0cafe70bfd1376a78ba519d21c24ebe0.setContent(html_49921f6bd80f5386fb26a036f3457fc4);
+            
+        
+
+        marker_c6036457f66cc8d7705a5233fc87a31a.bindPopup(popup_0cafe70bfd1376a78ba519d21c24ebe0)
+        ;
+
+        
+    
+    
+            marker_c6036457f66cc8d7705a5233fc87a31a.bindTooltip(
+                `<div>
+                     просп. Троицкий, 21, Архангельск, Архангельская обл., 163046
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d93cbd9897c2046ffdcede2fa44e59a = L.marker(
+                [64.53862, 40.518259],
+                {}
+            ).addTo(map_26b586d7eb1c92b06c194608f3126972);
+        
+    
+            var icon_a62202fbcb4b99a5adca8bd12ac4c9fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_5d93cbd9897c2046ffdcede2fa44e59a.setIcon(icon_a62202fbcb4b99a5adca8bd12ac4c9fc);
+        
+    
+        var popup_8d6fdf9d8f8b0762b7b4f03ba2ad2eb1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3191657a1aa1f4cb3a098a24f125c89d = $(`<div id="html_3191657a1aa1f4cb3a098a24f125c89d" style="width: 100.0%; height: 100.0%;">           <a href="/vysotka/">Здание проектных организаций 'Высотка'</a>          </div>`)[0];
+                popup_8d6fdf9d8f8b0762b7b4f03ba2ad2eb1.setContent(html_3191657a1aa1f4cb3a098a24f125c89d);
+            
+        
+
+        marker_5d93cbd9897c2046ffdcede2fa44e59a.bindPopup(popup_8d6fdf9d8f8b0762b7b4f03ba2ad2eb1)
+        ;
+
+        
+    
+    
+            marker_5d93cbd9897c2046ffdcede2fa44e59a.bindTooltip(
+                `<div>
+                     площадь Ленина, 4, Архангельск, 163069
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fdd9753e88b0694c45b683530517df57 = L.marker(
+                [64.534501, 40.52179],
+                {}
+            ).addTo(map_26b586d7eb1c92b06c194608f3126972);
+        
+    
+            var icon_0b48f1049c21ce9af1699629a3bbfed0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_fdd9753e88b0694c45b683530517df57.setIcon(icon_0b48f1049c21ce9af1699629a3bbfed0);
+        
+    
+        var popup_4f9d0347c18492af8e795fea3aa3f590 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5243822a7ee4ad5613a34e578e71cc0 = $(`<div id="html_c5243822a7ee4ad5613a34e578e71cc0" style="width: 100.0%; height: 100.0%;">           <a href="/pomor/">Магазин подарков и сувениров 'Поморские штучки'</a>          </div>`)[0];
+                popup_4f9d0347c18492af8e795fea3aa3f590.setContent(html_c5243822a7ee4ad5613a34e578e71cc0);
+            
+        
+
+        marker_fdd9753e88b0694c45b683530517df57.bindPopup(popup_4f9d0347c18492af8e795fea3aa3f590)
+        ;
+
+        
+    
+    
+            marker_fdd9753e88b0694c45b683530517df57.bindTooltip(
+                `<div>
+                     Троицкий проспект, 37, Архангельск, 163069
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f52fa00caeb50c61803b29736c48a855 = L.marker(
+                [64.538248, 40.520182],
+                {}
+            ).addTo(map_26b586d7eb1c92b06c194608f3126972);
+        
+    
+            var icon_313b79a4f90bc090a6075698d4155e71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_f52fa00caeb50c61803b29736c48a855.setIcon(icon_313b79a4f90bc090a6075698d4155e71);
+        
+    
+        var popup_912ed2a8ebf2ee1866770955c96d1373 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe6633f1e9b03b4904017d995cf5a918 = $(`<div id="html_fe6633f1e9b03b4904017d995cf5a918" style="width: 100.0%; height: 100.0%;">           <a href="/home-book/">Книжный магазин 'Дом книги'</a>          </div>`)[0];
+                popup_912ed2a8ebf2ee1866770955c96d1373.setContent(html_fe6633f1e9b03b4904017d995cf5a918);
+            
+        
+
+        marker_f52fa00caeb50c61803b29736c48a855.bindPopup(popup_912ed2a8ebf2ee1866770955c96d1373)
+        ;
+
+        
+    
+    
+            marker_f52fa00caeb50c61803b29736c48a855.bindTooltip(
+                `<div>
+                     площадь Ленина, 3, Архангельск, 163000
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f552c55c692f27804fb4d4afd112aa99 = L.marker(
+                [64.557908, 40.521062],
+                {}
+            ).addTo(map_26b586d7eb1c92b06c194608f3126972);
+        
+    
+            var icon_b33ee54288f73e4b9e0d2323481dfb98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_f552c55c692f27804fb4d4afd112aa99.setIcon(icon_b33ee54288f73e4b9e0d2323481dfb98);
+        
+    
+        var popup_905a2204762faba098ce25711896ccee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0db88c32e4bcd623d4b1b654f1c982dd = $(`<div id="html_0db88c32e4bcd623d4b1b654f1c982dd" style="width: 100.0%; height: 100.0%;">           <a href="/belomor/">Магазин подарков и сувениров 'Беломорские узоры'</a>          </div>`)[0];
+                popup_905a2204762faba098ce25711896ccee.setContent(html_0db88c32e4bcd623d4b1b654f1c982dd);
+            
+        
+
+        marker_f552c55c692f27804fb4d4afd112aa99.bindPopup(popup_905a2204762faba098ce25711896ccee)
+        ;
+
+        
+    
+    
+            marker_f552c55c692f27804fb4d4afd112aa99.bindTooltip(
+                `<div>
+                     улица Федота Шубина, 3, Архангельск, 163001
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_891d3b78ebef12c64795cc13df0220f3 = L.marker(
+                [64.698734, 40.415121],
+                {}
+            ).addTo(map_26b586d7eb1c92b06c194608f3126972);
+        
+    
+            var icon_fb3c272d3a73ffe45e8f68e78937db9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_891d3b78ebef12c64795cc13df0220f3.setIcon(icon_fb3c272d3a73ffe45e8f68e78937db9f);
+        
+    
+        var popup_1688ac84d13914f9fefb7c8e363083cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_227ab2000bb1058c755430a4dcde41b2 = $(`<div id="html_227ab2000bb1058c755430a4dcde41b2" style="width: 100.0%; height: 100.0%;">           <a href="/novo/">Новодвинская крепость</a>          </div>`)[0];
+                popup_1688ac84d13914f9fefb7c8e363083cf.setContent(html_227ab2000bb1058c755430a4dcde41b2);
+            
+        
+
+        marker_891d3b78ebef12c64795cc13df0220f3.bindPopup(popup_1688ac84d13914f9fefb7c8e363083cf)
+        ;
+
+        
+    
+    
+            marker_891d3b78ebef12c64795cc13df0220f3.bindTooltip(
+                `<div>
+                     ул. Ивана Рябова, 17, Архангельск, Архангельская обл., 163028
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_078add7948f07d5bdb0b42852ff10bb5 = L.marker(
+                [64.554938, 40.544382],
+                {}
+            ).addTo(map_26b586d7eb1c92b06c194608f3126972);
+        
+    
+            var icon_677b14aae2d67b1437df41e63ff0b752 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_078add7948f07d5bdb0b42852ff10bb5.setIcon(icon_677b14aae2d67b1437df41e63ff0b752);
+        
+    
+        var popup_1a2b149dd11bda394216eb3db19a5605 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bad402dd6e4501e826a29f9dd616b534 = $(`<div id="html_bad402dd6e4501e826a29f9dd616b534" style="width: 100.0%; height: 100.0%;">           <a href="/svyatie/">Церковь Всех Святых</a>          </div>`)[0];
+                popup_1a2b149dd11bda394216eb3db19a5605.setContent(html_bad402dd6e4501e826a29f9dd616b534);
+            
+        
+
+        marker_078add7948f07d5bdb0b42852ff10bb5.bindPopup(popup_1a2b149dd11bda394216eb3db19a5605)
+        ;
+
+        
+    
+    
+            marker_078add7948f07d5bdb0b42852ff10bb5.bindTooltip(
+                `<div>
+                     улица Суворова, 37, Архангельск, 163072
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ef5883292e3deac8718daccdea132d7 = L.marker(
+                [64.563946, 40.529776],
+                {}
+            ).addTo(map_26b586d7eb1c92b06c194608f3126972);
+        
+    
+            var icon_470ea9ea1e82943cc4545975de7a0884 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_9ef5883292e3deac8718daccdea132d7.setIcon(icon_470ea9ea1e82943cc4545975de7a0884);
+        
+    
+        var popup_84401acf00c6af628e73917e2a4de46e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_caeacce27fcf06e8e50fdfdbf7788e19 = $(`<div id="html_caeacce27fcf06e8e50fdfdbf7788e19" style="width: 100.0%; height: 100.0%;">           <a href="/troitsa/">Церковь Троицы Живоначальной</a>          </div>`)[0];
+                popup_84401acf00c6af628e73917e2a4de46e.setContent(html_caeacce27fcf06e8e50fdfdbf7788e19);
+            
+        
+
+        marker_9ef5883292e3deac8718daccdea132d7.bindPopup(popup_84401acf00c6af628e73917e2a4de46e)
+        ;
+
+        
+    
+    
+            marker_9ef5883292e3deac8718daccdea132d7.bindTooltip(
+                `<div>
+                     Комсомольская улица, 1А, Архангельск, 163045
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_52f155292872e8dd223c0fe5c889f62a = L.marker(
+                [64.545464, 40.514742],
+                {}
+            ).addTo(map_26b586d7eb1c92b06c194608f3126972);
+        
+    
+            var icon_ad08ddcede1a850e9201f1e2f0c7efed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_52f155292872e8dd223c0fe5c889f62a.setIcon(icon_ad08ddcede1a850e9201f1e2f0c7efed);
+        
+    
+        var popup_1d158ca40c35a533cdee9364c0726131 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d14e57530fe36c9073ea6465686c862 = $(`<div id="html_3d14e57530fe36c9073ea6465686c862" style="width: 100.0%; height: 100.0%;">           <a href="/ekaterina/">Лютеранская церковь Святой Екатерины</a>          </div>`)[0];
+                popup_1d158ca40c35a533cdee9364c0726131.setContent(html_3d14e57530fe36c9073ea6465686c862);
+            
+        
+
+        marker_52f155292872e8dd223c0fe5c889f62a.bindPopup(popup_1d158ca40c35a533cdee9364c0726131)
+        ;
+
+        
+    
+    
+            marker_52f155292872e8dd223c0fe5c889f62a.bindTooltip(
+                `<div>
+                     улица Карла Маркса, 3, Архангельск, 163069
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6ab21cc5e670720b3b036ad4134fad80 = L.marker(
+                [64.534352, 40.517308],
+                {}
+            ).addTo(map_26b586d7eb1c92b06c194608f3126972);
+        
+    
+            var icon_296271f18332d78dbdc34d86a6674ede = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_6ab21cc5e670720b3b036ad4134fad80.setIcon(icon_296271f18332d78dbdc34d86a6674ede);
+        
+    
+        var popup_5cd69ed27333cf06341540e3c6f35a0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35e6fee69722132f558c43a344a74b19 = $(`<div id="html_35e6fee69722132f558c43a344a74b19" style="width: 100.0%; height: 100.0%;">           <a href="/contor/">Почтовая контора 1786 г.</a>          </div>`)[0];
+                popup_5cd69ed27333cf06341540e3c6f35a0a.setContent(html_35e6fee69722132f558c43a344a74b19);
+            
+        
+
+        marker_6ab21cc5e670720b3b036ad4134fad80.bindPopup(popup_5cd69ed27333cf06341540e3c6f35a0a)
+        ;
+
+        
+    
+    
+            marker_6ab21cc5e670720b3b036ad4134fad80.bindTooltip(
+                `<div>
+                     набережная Северной Двины, 78, Архангельск, 163069
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7c8d7dbecb873a76c87efb91cee48e2 = L.marker(
+                [64.535522, 40.527422],
+                {}
+            ).addTo(map_26b586d7eb1c92b06c194608f3126972);
+        
+    
+            var icon_b0f62ec52517bc78443e7d0c082706de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_f7c8d7dbecb873a76c87efb91cee48e2.setIcon(icon_b0f62ec52517bc78443e7d0c082706de);
+        
+    
+        var popup_fcaa54c06377b0bf7ac64f6de1560091 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99d823fbdfabcf0b46d0ee74f5a6e77d = $(`<div id="html_99d823fbdfabcf0b46d0ee74f5a6e77d" style="width: 100.0%; height: 100.0%;">           <a href="/chumbarove/">Проспект Чумбарова-Лучинского</a>          </div>`)[0];
+                popup_fcaa54c06377b0bf7ac64f6de1560091.setContent(html_99d823fbdfabcf0b46d0ee74f5a6e77d);
+            
+        
+
+        marker_f7c8d7dbecb873a76c87efb91cee48e2.bindPopup(popup_fcaa54c06377b0bf7ac64f6de1560091)
+        ;
+
+        
+    
+    
+            marker_f7c8d7dbecb873a76c87efb91cee48e2.bindTooltip(
+                `<div>
+                     проспект Чумбарова-Лучинского, Архангельск
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

@@ -24,7 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("", views.homepage, name="home"),
     path('<slug:slug>/', views.DetailView.as_view()),
-    re_path(r'^form', views.contact),
+    re_path(r'^form', views.contact, name='form'),
 ]
 
 if settings.DEBUG:

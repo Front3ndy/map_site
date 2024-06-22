@@ -7,7 +7,7 @@ class DBClient:
 
     SELECT_TEMPLATE = """ SELECT * FROM map_app_category; """
     INSERT_TEMPLATE = """ INSERT INTO map_app_category ( id, category_name ) VALUES ( %s, %s ); """
-    SELECT_OBJ_COORDS = """ SELECT obj_name, obj_coord, obj_address, image, obj_category_id FROM map_app_objectsdata; """
+    SELECT_OBJ_COORDS = """ SELECT obj_name, obj_coord, obj_address, image, obj_category_id, url FROM map_app_objectsdata; """
 
     def __init__(self, dbname, user, password, host):
         self.dbname = dbname
@@ -27,7 +27,7 @@ class DBClient:
         data = self.cursor.fetchall()
         data_ed = []
         for i in data:
-            data_ed.append({'name': i[0], 'coords': i[1], 'addr': i[2], 'img': i[3], 'category': i[4]})
+            data_ed.append({'name': i[0], 'coords': i[1], 'addr': i[2], 'img': i[3], 'category': i[4], 'url': i[5]})
         return data_ed
 
     def load_csv_with_copy(self):

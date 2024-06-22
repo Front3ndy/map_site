@@ -58,23 +58,33 @@
         </section>
         <section class="review">
             <div class="container review-div">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+                <script type="text/javascript" src="../../static/scripts/grid_script.js"></script>
                 <div class="review__title">
                     <h1 class="review-plan">
                         Спланируйте свое идеальное путешествие
                     </h1>
                     <h2 class="review-more">
-                        <a href="#arh-map" class="review-more-link">увидеть больше мест</a>
+                        <button class="review-more-link-first">Посмотреть больше</button>
                     </h2>
                 </div>
                 <div class="review-grid">
-                    {% for dost in some %}
+                    {% for dost in dosts_list %}
+                    {% if dost.id < 10 %}
                         <div class="grid-element">
                             <a href="/{{ dost.url }}/" class="grid-el-link"><img src="{{ dost.image.url }}" alt="беломорские узоры" class="grid-element-img"></a>
                             <div class="grid-element-text">
                                 <h1>{{ dost.obj_name }}</h1>
-                                <h2>Узнать больше</h2>
                             </div>
                         </div>
+                    {% else %}
+                        <div class="grid-element inv hidden">
+                            <a href="/{{ dost.url }}/" class="grid-el-link"><img src="{{ dost.image.url }}" alt="беломорские узоры" class="grid-element-img"></a>
+                            <div class="grid-element-text">
+                                <h1>{{ dost.obj_name }}</h1>
+                            </div>
+                        </div>
+                    {% endif %}
                     {% endfor %}
 
                 </div>
@@ -86,8 +96,16 @@
                     <h1 class="map-text-header">Туристическая карта города</h1>
                 </div>
                 <div class="main-map">
+                    <div class="tabs">
+                        <button class="tab-item__btn" data-button="map_05caa589a468992d24d6e2365e3c3790">Все</button>
+                        <button class="tab-item__btn" data-button="map_05caa589a468992d24d6e2365e3c3790">Музеи</button>
+                        <button class="tab-item__btn" data-button="map_05caa589a468992d24d6e2365e3c3790">Театры</button>
+                        <button class="tab-item__btn" data-button="map_05caa589a468992d24d6e2365e3c3790">Рестораны</button>
+                        <button class="tab-item__btn" data-button="map_05caa589a468992d24d6e2365e3c3790">Памятники</button>
+                        <button class="tab-item__btn" data-button="map_05caa589a468992d24d6e2365e3c3790">Другие заведения</button>
+                    </div>
                     <div class="map-container">
-                        <div class="folium-map" id="map_856a26212e04f32f8902d1d6512a3eb4" ></div>
+                        <div class="folium-map" id="map_05caa589a468992d24d6e2365e3c3790" ></div>
                     </div>  
                     
                 </div>
@@ -264,14 +282,13 @@
             <div class="container">
                 <div class="post-form-div">
                     <div class="form-main">
-                        <h1>Есть предложения для добавления новых достопримечательностей города ?</h1>
+                        <h1>Есть предложения по работе сайта ?</h1>
                         <h2>
-                            Тогда пиши нам название и мы 
-                            поплним интерактивную карту 
+                            Тогда пиши нам 
                         </h2>
                         <form method="post">
                             <input type="text" onfocus="this.value=''" value="Название достопримечательности">
-                            <button id="form-button"><a href="./form.html">Отправить</a></button>
+                            <button id="form-button"><a href="{% url 'form' %}">Отправить</a></button>
                         </form>
                     </div>
                     <div class="form-img">

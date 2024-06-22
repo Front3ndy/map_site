@@ -1,5 +1,6 @@
 import folium
 from jinja2 import Template
+import base64
 
 from DBClient import DBClient
 
@@ -15,14 +16,21 @@ map = folium.Map(location=(64.54397606229037, 40.510735463353384), zoom_start=18
 #     icon=folium.Icon(icon="cloud"),
 # ).add_to(m)
 
+# encoded = base64.b64encode(open(f'../media/{i["img"]}', 'rb').read())
+# html = ('<img src="data:image/png;base64,{}" style="width: 70px; height: 70px; border-radius: 30px">'
+#         '<a href="/{{ url }}/">{{ name }}</a>').format
+# iframe = IFrame(html(encoded.decode('UTF-8')), width=100, height=100)
+# template = folium.Popup(iframe, max_width=140,)
+
 if __name__ == '__main__':
     db_client.connect()
     data = db_client.get_coords()
     for i in data:
-        html = """ 
-         <a href="/">{{ name }}</a>
-         """
-        template = Template(html).render(name=i['name'], img=i['img'])
+        encoded = base64.b64encode(open(f'../media/{i["img"]}', 'rb').read())
+        html = ('<img src="data:image/png;base64,{}" style="width: 70px; height: 70px; border-radius: 30px">'
+                '<a href="/{{ url }}/">{{ name }}</a>').format
+        temp = Template(html).render(name=i['name'], url=i['url'])
+        template = folium.Popup(temp, max_width=140)
         if i['category'] == 1:
             folium.Marker(
                 location=i['coords'],
@@ -59,5 +67,5 @@ if __name__ == '__main__':
                 icon=folium.Icon(color="purple")
             ).add_to(map)
 
-    map.save('C:/Users/Vadim/PycharmProjects/site_for_hack/site_for_hack/templates/map_app/map.html')
+    map.save('../templates/map_app/map_test.html')
     db_client.shutdown()

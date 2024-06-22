@@ -131,13 +131,23 @@ table {
 		background-color: #8dd3bb;
 	}
 	
-	.review-more-link {
+	.review-more-link-first {
 		text-decoration: none;
+		border: none;
+		outline: none;
+		background-color: #FAFBFC;
+		font-size: 14px;
+		font-weight: 500;
+		transition: 0.3s;
 	}
-	
-	.review-more-link:visited {
+
+	.review-more-link-first:hover {
 		text-decoration: none;
-		color: black;
+		border: none;
+		outline: none;
+		background-color: #8dd3bb;
+		font-size: 14px;
+		font-weight: 500;
 	}
 	
 	.review-grid {
@@ -194,7 +204,7 @@ table {
 	}
 	
 	.map {
-		margin-bottom: 31px;
+		margin-bottom: 50px;
 		height: 70vh;
 	}
 	
@@ -208,7 +218,14 @@ table {
 		max-width: 100%;
 	}
 
-	#map_856a26212e04f32f8902d1d6512a3eb4 {
+	.tabs {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 10px;
+		justify-content: space-between;
+	}
+
+	.folium-map {
 		position: relative;
 		height: 600px;
 	}

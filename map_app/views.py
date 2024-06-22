@@ -4,7 +4,7 @@ from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse
 from django.views.generic.base import View
 
-from .models import ObjectsData
+from .models import ObjectsData, Category
 
 
 class DetailView(View):

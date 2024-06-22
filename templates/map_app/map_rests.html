@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_caa52c5e11a68b2e84235c013cc38881 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_caa52c5e11a68b2e84235c013cc38881" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_caa52c5e11a68b2e84235c013cc38881 = L.map(
+                "map_caa52c5e11a68b2e84235c013cc38881",
+                {
+                    center: [64.54397606229037, 40.510735463353384],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 18,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1e163572ce60a2881c8da9bdf04a1a82 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_1e163572ce60a2881c8da9bdf04a1a82.addTo(map_caa52c5e11a68b2e84235c013cc38881);
+        
+    
+            var marker_c85e2eb93c365a6cfeb43553b57b2940 = L.marker(
+                [64.534684, 40.523607],
+                {}
+            ).addTo(map_caa52c5e11a68b2e84235c013cc38881);
+        
+    
+            var icon_dc674e3d5b86afad876da6c50587ff62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c85e2eb93c365a6cfeb43553b57b2940.setIcon(icon_dc674e3d5b86afad876da6c50587ff62);
+        
+    
+        var popup_5f7bb9717b213837fcc51468117880bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f6f2f38e68b3e8b6502dadb0bde58eb = $(`<div id="html_2f6f2f38e68b3e8b6502dadb0bde58eb" style="width: 100.0%; height: 100.0%;">           <a href="/pomorsk/">Ресторан 'Поморский'</a>          </div>`)[0];
+                popup_5f7bb9717b213837fcc51468117880bc.setContent(html_2f6f2f38e68b3e8b6502dadb0bde58eb);
+            
+        
+
+        marker_c85e2eb93c365a6cfeb43553b57b2940.bindPopup(popup_5f7bb9717b213837fcc51468117880bc)
+        ;
+
+        
+    
+    
+            marker_c85e2eb93c365a6cfeb43553b57b2940.bindTooltip(
+                `<div>
+                     Троицкий проспект, 38, Архангельск, 163069
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b959f6c2159fbd8679d4dbc551947180 = L.marker(
+                [64.541152, 40.510292],
+                {}
+            ).addTo(map_caa52c5e11a68b2e84235c013cc38881);
+        
+    
+            var icon_565dbbf5989babe927d87ee1b115dde2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b959f6c2159fbd8679d4dbc551947180.setIcon(icon_565dbbf5989babe927d87ee1b115dde2);
+        
+    
+        var popup_6d197e7c7dc69d3eab8738a6556cbde5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c18762cfa3a900e1d078ebc109265af = $(`<div id="html_3c18762cfa3a900e1d078ebc109265af" style="width: 100.0%; height: 100.0%;">           <a href="/stolitsa/">Ресторан Столица Поморья</a>          </div>`)[0];
+                popup_6d197e7c7dc69d3eab8738a6556cbde5.setContent(html_3c18762cfa3a900e1d078ebc109265af);
+            
+        
+
+        marker_b959f6c2159fbd8679d4dbc551947180.bindPopup(popup_6d197e7c7dc69d3eab8738a6556cbde5)
+        ;
+
+        
+    
+    
+            marker_b959f6c2159fbd8679d4dbc551947180.bindTooltip(
+                `<div>
+                     набережная Северной Двины, 88, Архангельск, 163069
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

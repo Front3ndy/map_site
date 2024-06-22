@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3b5a4ff974ab4b30783cd24d37e8cc99 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3b5a4ff974ab4b30783cd24d37e8cc99" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3b5a4ff974ab4b30783cd24d37e8cc99 = L.map(
+                "map_3b5a4ff974ab4b30783cd24d37e8cc99",
+                {
+                    center: [64.54397606229037, 40.510735463353384],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 18,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f9a3af93cb785464067b7b1d8e89ea9c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_f9a3af93cb785464067b7b1d8e89ea9c.addTo(map_3b5a4ff974ab4b30783cd24d37e8cc99);
+        
+    
+            var marker_531a843b81496887690424abef9a0ed2 = L.marker(
+                [64.549502, 40.518789],
+                {}
+            ).addTo(map_3b5a4ff974ab4b30783cd24d37e8cc99);
+        
+    
+            var icon_411782667a4b9fab4eba5775ec779788 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_531a843b81496887690424abef9a0ed2.setIcon(icon_411782667a4b9fab4eba5775ec779788);
+        
+    
+        var popup_cd39442c9fefac539f759f09bfef565d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd36009d30414f9b0896f24e33103025 = $(`<div id="html_fd36009d30414f9b0896f24e33103025" style="width: 100.0%; height: 100.0%;">           <a href="/teatr-ad/">Архангельский молодежный театр</a>          </div>`)[0];
+                popup_cd39442c9fefac539f759f09bfef565d.setContent(html_fd36009d30414f9b0896f24e33103025);
+            
+        
+
+        marker_531a843b81496887690424abef9a0ed2.bindPopup(popup_cd39442c9fefac539f759f09bfef565d)
+        ;
+
+        
+    
+    
+            marker_531a843b81496887690424abef9a0ed2.bindTooltip(
+                `<div>
+                     улица Логинова, 9, Архангельск, 163000
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_da4f65a2da856816e1d7d91a7deb69cd = L.marker(
+                [64.536369, 40.515223],
+                {}
+            ).addTo(map_3b5a4ff974ab4b30783cd24d37e8cc99);
+        
+    
+            var icon_637240f0e60f7eb55a3d7f9f0f942920 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_da4f65a2da856816e1d7d91a7deb69cd.setIcon(icon_637240f0e60f7eb55a3d7f9f0f942920);
+        
+    
+        var popup_35f392b8f4103dc95793bd9c7d344350 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_331746dc692dec6038554e757fe5ca0f = $(`<div id="html_331746dc692dec6038554e757fe5ca0f" style="width: 100.0%; height: 100.0%;">           <a href="/dramma/">Театр драмы имени М.В. Ломоносова</a>          </div>`)[0];
+                popup_35f392b8f4103dc95793bd9c7d344350.setContent(html_331746dc692dec6038554e757fe5ca0f);
+            
+        
+
+        marker_da4f65a2da856816e1d7d91a7deb69cd.bindPopup(popup_35f392b8f4103dc95793bd9c7d344350)
+        ;
+
+        
+    
+    
+            marker_da4f65a2da856816e1d7d91a7deb69cd.bindTooltip(
+                `<div>
+                     Петровский парк, 1, Архангельск
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b70b6dbfa1b2866e501c8cf6d4a65c61 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b70b6dbfa1b2866e501c8cf6d4a65c61" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b70b6dbfa1b2866e501c8cf6d4a65c61 = L.map(
+                "map_b70b6dbfa1b2866e501c8cf6d4a65c61",
+                {
+                    center: [64.54397606229037, 40.510735463353384],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 18,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c7c5ff19fc09c7f0d6ec977bd7f802c7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_c7c5ff19fc09c7f0d6ec977bd7f802c7.addTo(map_b70b6dbfa1b2866e501c8cf6d4a65c61);
+        
+    
+            var marker_58eeb9f327cc963d059ec977feb36712 = L.marker(
+                [64.528421, 40.548338],
+                {}
+            ).addTo(map_b70b6dbfa1b2866e501c8cf6d4a65c61);
+        
+    
+            var icon_13d317c32d01a8e860574e25afcb1c79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_58eeb9f327cc963d059ec977feb36712.setIcon(icon_13d317c32d01a8e860574e25afcb1c79);
+        
+    
+        var popup_e36113bf6d9ea71f57ff79466deefe1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c0ab1e36347cb5a249cf4534016a862 = $(`<div id="html_0c0ab1e36347cb5a249cf4534016a862" style="width: 100.0%; height: 100.0%;">           <a href="/lomonosov/">Памятник Михаилу Васильевичу Ломоносову</a>          </div>`)[0];
+                popup_e36113bf6d9ea71f57ff79466deefe1c.setContent(html_0c0ab1e36347cb5a249cf4534016a862);
+            
+        
+
+        marker_58eeb9f327cc963d059ec977feb36712.bindPopup(popup_e36113bf6d9ea71f57ff79466deefe1c)
+        ;
+
+        
+    
+    
+            marker_58eeb9f327cc963d059ec977feb36712.bindTooltip(
+                `<div>
+                     набережная Северной Двины, Архангельск
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac34e070f9923cda5b58d7de0fe34b4e = L.marker(
+                [64.536781, 40.511108],
+                {}
+            ).addTo(map_b70b6dbfa1b2866e501c8cf6d4a65c61);
+        
+    
+            var icon_801c8ecf5e91b7bbe6cff30cd181bacf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_ac34e070f9923cda5b58d7de0fe34b4e.setIcon(icon_801c8ecf5e91b7bbe6cff30cd181bacf);
+        
+    
+        var popup_65c0418827f695d72b26df775ea4a94c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ba2e82d8dd3612ab651a040befdc9c9 = $(`<div id="html_3ba2e82d8dd3612ab651a040befdc9c9" style="width: 100.0%; height: 100.0%;">           <a href="/petr-one/">Памятник Петру I</a>          </div>`)[0];
+                popup_65c0418827f695d72b26df775ea4a94c.setContent(html_3ba2e82d8dd3612ab651a040befdc9c9);
+            
+        
+
+        marker_ac34e070f9923cda5b58d7de0fe34b4e.bindPopup(popup_65c0418827f695d72b26df775ea4a94c)
+        ;
+
+        
+    
+    
+            marker_ac34e070f9923cda5b58d7de0fe34b4e.bindTooltip(
+                `<div>
+                     набережная Северной Двины, Архангельск
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c60d010c44dff2d355ee873c0963b6ba = L.marker(
+                [64.540716, 40.514184],
+                {}
+            ).addTo(map_b70b6dbfa1b2866e501c8cf6d4a65c61);
+        
+    
+            var icon_5c7997137ac1bdf2462c42e2964a61fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_c60d010c44dff2d355ee873c0963b6ba.setIcon(icon_5c7997137ac1bdf2462c42e2964a61fe);
+        
+    
+        var popup_2f47c863eaed3887a55f6d5e74c3e8ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9fd6ddf4c594a677962d3c0a3481cbae = $(`<div id="html_9fd6ddf4c594a677962d3c0a3481cbae" style="width: 100.0%; height: 100.0%;">           <a href="/obs/">Обелиск Севера</a>          </div>`)[0];
+                popup_2f47c863eaed3887a55f6d5e74c3e8ce.setContent(html_9fd6ddf4c594a677962d3c0a3481cbae);
+            
+        
+
+        marker_c60d010c44dff2d355ee873c0963b6ba.bindPopup(popup_2f47c863eaed3887a55f6d5e74c3e8ce)
+        ;
+
+        
+    
+    
+            marker_c60d010c44dff2d355ee873c0963b6ba.bindTooltip(
+                `<div>
+                     Троицкий проспект, Архангельск
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab259834d57c80dccffef038603d398b = L.marker(
+                [64.54397606229037, 40.510735463353384],
+                {}
+            ).addTo(map_b70b6dbfa1b2866e501c8cf6d4a65c61);
+        
+    
+            var icon_681b5d1515bf2218e2a4342d1cb975fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_ab259834d57c80dccffef038603d398b.setIcon(icon_681b5d1515bf2218e2a4342d1cb975fe);
+        
+    
+        var popup_f90a9b692f6f12516abbc6837d6703c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c637eaa3627b5bd272e2cb53fcb41c9e = $(`<div id="html_c637eaa3627b5bd272e2cb53fcb41c9e" style="width: 100.0%; height: 100.0%;">           <a href="/seal/">Памятник Тюленю-Спасителю</a>          </div>`)[0];
+                popup_f90a9b692f6f12516abbc6837d6703c6.setContent(html_c637eaa3627b5bd272e2cb53fcb41c9e);
+            
+        
+
+        marker_ab259834d57c80dccffef038603d398b.bindPopup(popup_f90a9b692f6f12516abbc6837d6703c6)
+        ;
+
+        
+    
+    
+            marker_ab259834d57c80dccffef038603d398b.bindTooltip(
+                `<div>
+                     наб. Северной Двины, 95, Архангельск
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_88270bf4bc43ad1c1e5f0155912c11f1 = L.marker(
+                [64.545391, 40.511956],
+                {}
+            ).addTo(map_b70b6dbfa1b2866e501c8cf6d4a65c61);
+        
+    
+            var icon_5d5b7dd62e5baa12c8c13125b4dc0458 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_88270bf4bc43ad1c1e5f0155912c11f1.setIcon(icon_5d5b7dd62e5baa12c8c13125b4dc0458);
+        
+    
+        var popup_9e824ce2ba1f4c801fcf3292acac7c85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c6369a53a1dc391d66e60fba76bb263 = $(`<div id="html_4c6369a53a1dc391d66e60fba76bb263" style="width: 100.0%; height: 100.0%;">           <a href="/flot/">Памятник Юнгам Северного флота</a>          </div>`)[0];
+                popup_9e824ce2ba1f4c801fcf3292acac7c85.setContent(html_4c6369a53a1dc391d66e60fba76bb263);
+            
+        
+
+        marker_88270bf4bc43ad1c1e5f0155912c11f1.bindPopup(popup_9e824ce2ba1f4c801fcf3292acac7c85)
+        ;
+
+        
+    
+    
+            marker_88270bf4bc43ad1c1e5f0155912c11f1.bindTooltip(
+                `<div>
+                     Октябрьский округ, Архангельск
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e393e61fdf58a41f4414297f156b9ad = L.marker(
+                [64.541818, 40.510106],
+                {}
+            ).addTo(map_b70b6dbfa1b2866e501c8cf6d4a65c61);
+        
+    
+            var icon_5370bb0f310ee6fa732b2c34f885866e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_5e393e61fdf58a41f4414297f156b9ad.setIcon(icon_5370bb0f310ee6fa732b2c34f885866e);
+        
+    
+        var popup_96b7f9caa76c97bc09c4466232874a48 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a774f150ce0d290e46c4b7d9d0a649f0 = $(`<div id="html_a774f150ce0d290e46c4b7d9d0a649f0" style="width: 100.0%; height: 100.0%;">           <a href="/voin/">Стела 'Город воинской славы'</a>          </div>`)[0];
+                popup_96b7f9caa76c97bc09c4466232874a48.setContent(html_a774f150ce0d290e46c4b7d9d0a649f0);
+            
+        
+
+        marker_5e393e61fdf58a41f4414297f156b9ad.bindPopup(popup_96b7f9caa76c97bc09c4466232874a48)
+        ;
+
+        
+    
+    
+            marker_5e393e61fdf58a41f4414297f156b9ad.bindTooltip(
+                `<div>
+                     набережная Северной Двины, Архангельск
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_75ac5bfc3658a3072fdb671fd17faa2a = L.marker(
+                [64.533575, 40.521745],
+                {}
+            ).addTo(map_b70b6dbfa1b2866e501c8cf6d4a65c61);
+        
+    
+            var icon_b3f1b1677a087e6072d9250fcbb03087 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_75ac5bfc3658a3072fdb671fd17faa2a.setIcon(icon_b3f1b1677a087e6072d9250fcbb03087);
+        
+    
+        var popup_6f3f0f07b804bdf77af0ba27b1ad34d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9433780270fed16401d813a80abadcd9 = $(`<div id="html_9433780270fed16401d813a80abadcd9" style="width: 100.0%; height: 100.0%;">           <a href="/plotnik/">Усадебный дом Е.К. Плотниковой</a>          </div>`)[0];
+                popup_6f3f0f07b804bdf77af0ba27b1ad34d1.setContent(html_9433780270fed16401d813a80abadcd9);
+            
+        
+
+        marker_75ac5bfc3658a3072fdb671fd17faa2a.bindPopup(popup_6f3f0f07b804bdf77af0ba27b1ad34d1)
+        ;
+
+        
+    
+    
+            marker_75ac5bfc3658a3072fdb671fd17faa2a.bindTooltip(
+                `<div>
+                     набережная Северной Двины, 72, Архангельск, 163069
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_637d6129ad36ce8fa2a2ca776f2f8065 = L.marker(
+                [64.531293, 40.534798],
+                {}
+            ).addTo(map_b70b6dbfa1b2866e501c8cf6d4a65c61);
+        
+    
+            var icon_08abc9b7d2d5c7d6ed77da06288050f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_637d6129ad36ce8fa2a2ca776f2f8065.setIcon(icon_08abc9b7d2d5c7d6ed77da06288050f8);
+        
+    
+        var popup_af997e3729239444e4094df964ca9d72 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6dfb09cc40e3cfa280d93e18f64a7d04 = $(`<div id="html_6dfb09cc40e3cfa280d93e18f64a7d04" style="width: 100.0%; height: 100.0%;">           <a href="/doblest/">Памятник доблестным защитникам советского севера</a>          </div>`)[0];
+                popup_af997e3729239444e4094df964ca9d72.setContent(html_6dfb09cc40e3cfa280d93e18f64a7d04);
+            
+        
+
+        marker_637d6129ad36ce8fa2a2ca776f2f8065.bindPopup(popup_af997e3729239444e4094df964ca9d72)
+        ;
+
+        
+    
+    
+            marker_637d6129ad36ce8fa2a2ca776f2f8065.bindTooltip(
+                `<div>
+                     Ломоносовский округ, Архангельск
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
