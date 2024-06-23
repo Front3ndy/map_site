@@ -204,7 +204,7 @@ table {
 	}
 	
 	.map {
-		margin-bottom: 50px;
+		margin-bottom: 100px;
 		height: 70vh;
 	}
 	
@@ -225,9 +225,53 @@ table {
 		justify-content: space-between;
 	}
 
+	.tab-item__btn {
+		text-decoration: none;
+		color: #fff;
+		border: none;
+		font-size: 16px;
+		font-weight: 700;
+		letter-spacing: 1px;
+		padding: 8px;
+		border-radius: 5px;
+		background-color: #8DD3BB;
+	}
+
+	.tab-item__btn-active {
+		text-decoration: none;
+		color: #fff;
+		border: none;
+	}
+
+	#musem {
+		background-color: green;
+	}
+
+	#ttr {
+		background-color: orange;
+	}
+
+	#rest {
+		background-color: aqua;
+	}
+
+	#pamyat {
+		background-color: grey;
+	}
+
+	#other {
+		background-color: palevioletred;
+	}
+
 	.folium-map {
+		opacity: 0;
+	}
+
+	.folium-map-active {
+		opacity: 1;
 		position: relative;
 		height: 600px;
+		margin-bottom: 30px;
 	}
 
 	.map-image {
@@ -666,9 +710,9 @@ table {
 		font-weight: 400;
 		font-size: 14px;
 	}
-	
+
 	.map {
-		margin-bottom: 31px;
+		margin-bottom: 100px;
 		height: 70vh;
 	}
 	
@@ -682,10 +726,62 @@ table {
 		max-width: 100%;
 	}
 
-	#map_856a26212e04f32f8902d1d6512a3eb4 {
+	.tabs {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 10px;
+		justify-content: space-between;
+	}
+
+	.tab-item__btn {
+		text-decoration: none;
+		color: #fff;
+		border: none;
+		font-size: 16px;
+		font-weight: 700;
+		letter-spacing: 1px;
+		padding: 8px;
+		border-radius: 5px;
+		background-color: #8DD3BB;
+	}
+
+	.tab-item__btn-active {
+		text-decoration: none;
+		color: #fff;
+		border: none;
+	}
+
+	#musem {
+		background-color: green;
+	}
+
+	#ttr {
+		background-color: orange;
+	}
+
+	#rest {
+		background-color: aqua;
+	}
+
+	#pamyat {
+		background-color: grey;
+	}
+
+	#other {
+		background-color: palevioletred;
+	}
+
+	.folium-map {
+		opacity: 0;
+	}
+
+	.folium-map-active {
+		opacity: 1;
 		position: relative;
 		height: 600px;
+		margin-bottom: 30px;
 	}
+
 	
 	.google-views {
 		margin-bottom: 54px;
@@ -1117,8 +1213,9 @@ table {
 		font-weight: 400;
 		font-size: 14px;
 	}
+
 	.map {
-		margin-bottom: 31px;
+		margin-bottom: 100px;
 		height: 70vh;
 	}
 	
@@ -1131,6 +1228,63 @@ table {
 	.map-container {
 		max-width: 100%;
 	}
+
+	.tabs {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 10px;
+		justify-content: space-between;
+	}
+
+	.tab-item__btn {
+		text-decoration: none;
+		color: #fff;
+		border: none;
+		font-size: 16px;
+		font-weight: 700;
+		letter-spacing: 1px;
+		padding: 8px;
+		border-radius: 5px;
+		background-color: #8DD3BB;
+	}
+
+	.tab-item__btn-active {
+		text-decoration: none;
+		color: #fff;
+		border: none;
+	}
+
+	#musem {
+		background-color: green;
+	}
+
+	#ttr {
+		background-color: orange;
+	}
+
+	#rest {
+		background-color: aqua;
+	}
+
+	#pamyat {
+		background-color: grey;
+	}
+
+	#other {
+		background-color: palevioletred;
+	}
+
+	.folium-map {
+		opacity: 0;
+	}
+
+	.folium-map-active {
+		opacity: 1;
+		position: relative;
+		height: 600px;
+		margin-bottom: 30px;
+	}
+
 
 	#map_856a26212e04f32f8902d1d6512a3eb4 {
 		position: relative;
@@ -1570,7 +1724,7 @@ table {
 	}
 	
 	.map {
-		margin-bottom: 31px;
+		margin-bottom: 100px;
 		height: 70vh;
 	}
 	
@@ -1584,10 +1738,62 @@ table {
 		max-width: 100%;
 	}
 
-	#map_856a26212e04f32f8902d1d6512a3eb4 {
+	.tabs {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 10px;
+		justify-content: space-between;
+	}
+
+	.tab-item__btn {
+		text-decoration: none;
+		color: #fff;
+		border: none;
+		font-size: 16px;
+		font-weight: 700;
+		letter-spacing: 1px;
+		padding: 8px;
+		border-radius: 5px;
+		background-color: #8DD3BB;
+	}
+
+	.tab-item__btn-active {
+		text-decoration: none;
+		color: #fff;
+		border: none;
+	}
+
+	#musem {
+		background-color: green;
+	}
+
+	#ttr {
+		background-color: orange;
+	}
+
+	#rest {
+		background-color: aqua;
+	}
+
+	#pamyat {
+		background-color: grey;
+	}
+
+	#other {
+		background-color: palevioletred;
+	}
+
+	.folium-map {
+		opacity: 0;
+	}
+
+	.folium-map-active {
+		opacity: 1;
 		position: relative;
 		height: 600px;
+		margin-bottom: 30px;
 	}
+
 	
 	.google-views {
 		margin-bottom: 54px;
@@ -2025,7 +2231,7 @@ table {
 	}
 	
 	.map {
-		margin-bottom: 31px;
+		margin-bottom: 100px;
 		height: 70vh;
 	}
 	
@@ -2039,9 +2245,60 @@ table {
 		max-width: 100%;
 	}
 
-	#map_856a26212e04f32f8902d1d6512a3eb4 {
+	.tabs {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 10px;
+		justify-content: space-between;
+	}
+
+	.tab-item__btn {
+		text-decoration: none;
+		color: #fff;
+		border: none;
+		font-size: 16px;
+		font-weight: 700;
+		letter-spacing: 1px;
+		padding: 8px;
+		border-radius: 5px;
+		background-color: #8DD3BB;
+	}
+
+	.tab-item__btn-active {
+		text-decoration: none;
+		color: #fff;
+		border: none;
+	}
+
+	#musem {
+		background-color: green;
+	}
+
+	#ttr {
+		background-color: orange;
+	}
+
+	#rest {
+		background-color: aqua;
+	}
+
+	#pamyat {
+		background-color: grey;
+	}
+
+	#other {
+		background-color: palevioletred;
+	}
+
+	.folium-map {
+		opacity: 0;
+	}
+
+	.folium-map-active {
+		opacity: 1;
 		position: relative;
 		height: 600px;
+		margin-bottom: 30px;
 	}
 	
 	.google-views {
@@ -2482,7 +2739,7 @@ table {
 	}
 	
 	.map {
-		margin-bottom: 31px;
+		margin-bottom: 100px;
 		height: 70vh;
 	}
 	
@@ -2496,10 +2753,62 @@ table {
 		max-width: 100%;
 	}
 
-	#map_856a26212e04f32f8902d1d6512a3eb4 {
+	.tabs {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 10px;
+		justify-content: space-between;
+	}
+
+	.tab-item__btn {
+		text-decoration: none;
+		color: #fff;
+		border: none;
+		font-size: 16px;
+		font-weight: 700;
+		letter-spacing: 1px;
+		padding: 8px;
+		border-radius: 5px;
+		background-color: #8DD3BB;
+	}
+
+	.tab-item__btn-active {
+		text-decoration: none;
+		color: #fff;
+		border: none;
+	}
+
+	#musem {
+		background-color: green;
+	}
+
+	#ttr {
+		background-color: orange;
+	}
+
+	#rest {
+		background-color: aqua;
+	}
+
+	#pamyat {
+		background-color: grey;
+	}
+
+	#other {
+		background-color: palevioletred;
+	}
+
+	.folium-map {
+		opacity: 0;
+	}
+
+	.folium-map-active {
+		opacity: 1;
 		position: relative;
 		height: 600px;
+		margin-bottom: 30px;
 	}
+
 	
 	.google-views {
 		margin-bottom: 54px;
@@ -2938,7 +3247,7 @@ table {
 	}
 	
 	.map {
-		margin-bottom: 31px;
+		margin-bottom: 100px;
 		height: 70vh;
 	}
 	
@@ -2952,9 +3261,60 @@ table {
 		max-width: 100%;
 	}
 
-	#map_856a26212e04f32f8902d1d6512a3eb4 {
+	.tabs {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 10px;
+		justify-content: space-between;
+	}
+
+	.tab-item__btn {
+		text-decoration: none;
+		color: #fff;
+		border: none;
+		font-size: 16px;
+		font-weight: 700;
+		letter-spacing: 1px;
+		padding: 8px;
+		border-radius: 5px;
+		background-color: #8DD3BB;
+	}
+
+	.tab-item__btn-active {
+		text-decoration: none;
+		color: #fff;
+		border: none;
+	}
+
+	#musem {
+		background-color: green;
+	}
+
+	#ttr {
+		background-color: orange;
+	}
+
+	#rest {
+		background-color: aqua;
+	}
+
+	#pamyat {
+		background-color: grey;
+	}
+
+	#other {
+		background-color: palevioletred;
+	}
+
+	.folium-map {
+		opacity: 0;
+	}
+
+	.folium-map-active {
+		opacity: 1;
 		position: relative;
 		height: 600px;
+		margin-bottom: 30px;
 	}
 	
 	.google-views {
@@ -3394,7 +3754,7 @@ table {
 	}
 	
 	.map {
-		margin-bottom: 31px;
+		margin-bottom: 100px;
 		height: 70vh;
 	}
 	
@@ -3408,10 +3768,62 @@ table {
 		max-width: 100%;
 	}
 
-	#map_856a26212e04f32f8902d1d6512a3eb4 {
+	.tabs {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 10px;
+		justify-content: space-between;
+	}
+
+	.tab-item__btn {
+		text-decoration: none;
+		color: #fff;
+		border: none;
+		font-size: 16px;
+		font-weight: 700;
+		letter-spacing: 1px;
+		padding: 8px;
+		border-radius: 5px;
+		background-color: #8DD3BB;
+	}
+
+	.tab-item__btn-active {
+		text-decoration: none;
+		color: #fff;
+		border: none;
+	}
+
+	#musem {
+		background-color: green;
+	}
+
+	#ttr {
+		background-color: orange;
+	}
+
+	#rest {
+		background-color: aqua;
+	}
+
+	#pamyat {
+		background-color: grey;
+	}
+
+	#other {
+		background-color: palevioletred;
+	}
+
+	.folium-map {
+		opacity: 0;
+	}
+
+	.folium-map-active {
+		opacity: 1;
 		position: relative;
 		height: 600px;
+		margin-bottom: 30px;
 	}
+
 	
 	.google-views {
 		margin-bottom: 54px;

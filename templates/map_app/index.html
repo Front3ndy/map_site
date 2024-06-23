@@ -29,7 +29,7 @@
 
         <meta name="viewport" content="width=device-width,
             initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
+    
     <title>Document</title>
 </head>
 <body>
@@ -97,17 +97,22 @@
                 </div>
                 <div class="main-map">
                     <div class="tabs">
-                        <button class="tab-item__btn" data-button="map_05caa589a468992d24d6e2365e3c3790">Все</button>
-                        <button class="tab-item__btn" data-button="map_05caa589a468992d24d6e2365e3c3790">Музеи</button>
-                        <button class="tab-item__btn" data-button="map_05caa589a468992d24d6e2365e3c3790">Театры</button>
-                        <button class="tab-item__btn" data-button="map_05caa589a468992d24d6e2365e3c3790">Рестораны</button>
-                        <button class="tab-item__btn" data-button="map_05caa589a468992d24d6e2365e3c3790">Памятники</button>
-                        <button class="tab-item__btn" data-button="map_05caa589a468992d24d6e2365e3c3790">Другие заведения</button>
+                        <button class="tab-item__btn tab-item__btn-active" data-button="map_05caa589a468992d24d6e2365e3c3790">Все</button>
+                        <button id="musem" class="tab-item__btn" data-button="map_dcd9609e1480eead804a3c17b67fcb45">Музеи</button>
+                        <button id="ttr" class="tab-item__btn" data-button="map_3b5a4ff974ab4b30783cd24d37e8cc99">Театры</button>
+                        <button id="rest" class="tab-item__btn" data-button="map_caa52c5e11a68b2e84235c013cc38881">Рестораны</button>
+                        <button id="pamyat" class="tab-item__btn" data-button="map_b70b6dbfa1b2866e501c8cf6d4a65c61">Памятники</button>
+                        <button id="other" class="tab-item__btn" data-button="map_26b586d7eb1c92b06c194608f3126972">Другие заведения</button>
                     </div>
                     <div class="map-container">
-                        <div class="folium-map" id="map_05caa589a468992d24d6e2365e3c3790" ></div>
+                        <div class="folium-map folium-map-active" id="map_05caa589a468992d24d6e2365e3c3790" ></div>
+                        <div class="folium-map" id="map_dcd9609e1480eead804a3c17b67fcb45" ></div>
+                        <div class="folium-map" id="map_26b586d7eb1c92b06c194608f3126972" ></div>
+                        <div class="folium-map" id="map_b70b6dbfa1b2866e501c8cf6d4a65c61" ></div>
+                        <div class="folium-map" id="map_caa52c5e11a68b2e84235c013cc38881" ></div>
+                        <div class="folium-map" id="map_3b5a4ff974ab4b30783cd24d37e8cc99" ></div>
                     </div>  
-                    
+                    <script type="text/javascript" src="../../static/scripts/map_script.js"></script>
                 </div>
             </div>
         </section>
@@ -319,6 +324,8 @@
             </div>
         </div>
     </footer>
+    
 </body>
 {% include 'include/script.html' %}
+
 </html>
